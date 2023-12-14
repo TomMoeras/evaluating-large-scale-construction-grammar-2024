@@ -6,7 +6,7 @@ This repository contains the code and resources for the project. It is meant as 
 
 ## File Structure
 
-The repository holds two main folders. The entire content can be [explored here](https://mango-dune-07a8b7110.1.azurestaticapps.net/?repo=TomMoeras%2Fevaluating-large-scale-construction-grammar-clin).
+The repository holds one main folder. The entire content can be [explored here](https://mango-dune-07a8b7110.1.azurestaticapps.net/?repo=TomMoeras%2Fevaluating-large-scale-construction-grammar-clin).
 
 * **ccxg_grammar_eval**
 
@@ -39,7 +39,6 @@ The study's results can be replicated in a couple of different ways. They all re
 ```
 pip install -r requirements.txt
 ```
-This installs the packages both for the ccxg_grammar_eval and quarto. Note that [Quarto](https://quarto.org/) needs to be installed separately.
 
 * Using the Jupyter notebook file, which contains the main functions used in the study and an explanation to how they function. These use the pickle objects used in the study itself.
 * Re-creating the pickle objects by using the "main.py" file. Note that this is not possible without using the "corpus_data.csv" which is not provided in this repository due to licensing restrictions. This file is available on request.
