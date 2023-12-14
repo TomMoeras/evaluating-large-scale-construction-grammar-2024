@@ -1,0 +1,254 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 5;
+    padding: 2;
+    background-color: #ffffff;
+    color: #333333;
+    min-height: 100vh;
+}
+
+h1 {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.micro-eval-info-container {
+    position: absolute;
+    z-index: 2;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    max-height: 200px;
+    overflow-y: auto;
+    display: none;
+}
+
+.micro-eval-info-wrapper {
+    position: relative;
+}
+
+.info-btn {
+    background-color: #f0f0f0;
+    color: #333333;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 8px 12px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.info-btn:hover {
+    background-color: #e0e0e0;
+    border: 1px solid #333333;
+}
+
+.info-btn:disabled {
+    background-color: #f0f0f0;
+    color: #777;
+    cursor: not-allowed;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.plot-container {
+    margin-right: 20px;
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+select,
+input {
+    font-size: 16px;
+    padding: 8px 10px;
+    margin-bottom: 30px;
+    width: 400px;
+    max-width: 100%;
+    display: block;
+    background-color: #f5f5f5;
+    color: #333333;
+    border: 1px solid #f5f5f5;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border: 1px solid #333333;
+}
+
+option {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+#prediction-container {
+    margin-bottom: 30px;
+}
+
+#prediction-container h2 {
+    margin-bottom: 2px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    padding: 10px;
+}
+
+.column:nth-child(1) {
+    flex: 1;
+}
+
+.column:nth-child(2) {
+    flex: 2;
+}
+
+.tables-container,
+.displacy-container {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.table-wrapper,
+.displacy-wrapper {
+    flex: 1;
+    min-width: 300px;
+}
+
+@media (max-width: 767px) {
+
+    .column,
+    .table-wrapper,
+    .displacy-wrapper {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+.tables-container table {
+    margin-bottom: 10px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tables-container th,
+.tables-container td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+.tables-container th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+.displacy-container .displacy-ent {
+    margin-bottom: 20px;
+}
+
+.displacy-container .displacy-token {
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.original-frames,
+.grammar-frames {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.original-frames .table-wrapper,
+.original-frames .displacy-wrapper,
+.grammar-frames .table-wrapper,
+.grammar-frames .displacy-wrapper {
+    width: 100%;
+}
+
+.tables-container h2,
+.displacy-container h2 {
+    margin-top: 20px;
+    min-height: 30px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]+label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    display: inline-block;
+    color: #333333;
+    margin-right: 10px;
+}
+
+input[type="radio"]+label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #333333;
+    background-color: transparent;
+}
+
+input[type="radio"]:checked+label:before {
+    border: 2px solid #333333;
+    background-color: #cccccc;
+}
+
+input[type="radio"]+label:after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 6px;
+    left: 4px;
+    border-radius: 50%;
+    background-color: #cccccc;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+input[type="radio"]:checked+label:after {
+    opacity: 1;
+}
+
+.plot-options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+}

@@ -1,0 +1,20 @@
+# ccxg_grammar_eval
+Flask==2.2.5
+ipython==8.12.0
+numpy==1.24.3
+pandas==2.0.0
+plotly==5.14.1
+Requests==2.31.0
+scikit_learn==1.2.2
+scipy==1.10.1
+spacy==3.5.2
+# spacy-model-en_core_web_sm==3.5.0
+tabulate==0.9.0
+tqdm==4.65.0
+
+# quarto
+nbformat==5.8.0
+nbclient==0.7.3
+matplotlib==3.7.1
+seaborn==0.12.2
+scikit_learn==1.2.2

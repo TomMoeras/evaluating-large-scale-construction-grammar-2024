@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grammar Prediction Explorer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+
+<body>
+    <h1>Grammar Prediction Explorer</h1>
+    <div class="form-container">
+        <div class="form-inputs">
+            <label for="sentence-input">
+                <h2>Search for a sentence:</h2>
+            </label>
+            <input list="sentences" id="sentence-input" autocomplete="off">
+            <datalist id="sentences"></datalist>
+
+            <!-- Move plot options below the sentence search -->
+            <div class="plot-options">
+                <input type="radio" id="f1-plot-option" name="plot-option" value="f1" checked>
+                <label for="f1-plot-option">F1 Score Plot</label>
+                <input type="radio" id="time-plot-option" name="plot-option" value="time">
+                <label for="time-plot-option">Time Plot</label>
+            </div>
+
+            <!-- Move performance parameters button below the plot options -->
+            <div class="performance-parameters-wrapper">
+                <button id="performance-parameters-btn" class="info-btn" disabled>Show Performance Parameters</button>
+                <div id="performance-parameters-container" class="performance-parameters-container"></div>
+            </div>
+
+            <h2>Select a grammar:</h2>
+            <select id="grammar-select" disabled>
+                <option value="">--Please choose a grammar--</option>
+            </select>
+
+            <!-- Move micro evaluation info below the grammar selection -->
+            <div class="micro-eval-info-wrapper">
+                <button id="micro-eval-info-btn" class="info-btn" disabled>Show Micro Evaluation Info</button>
+                <div id="micro-eval-info-container" class="micro-eval-info-container"></div>
+            </div>
+        </div>
+        <!-- Add this div to display the Plotly graph -->
+        <div id="plot" class="plot-container">
+        </div>
+        <div id="prediction-container"></div>
+    </div>
+</body>
+
+</html>
