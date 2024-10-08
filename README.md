@@ -43,6 +43,14 @@ pip install -r requirements.txt
 * Using the Jupyter notebook file, which contains the main functions used in the study and an explanation to how they function. These use the pickle objects used in the study itself.
 * Re-creating the pickle objects by using the "main.py" file. Note that this is not possible without using the "corpus_data.csv" which is not provided in this repository due to licensing restrictions. This file is available on request.
 
+Note that the pickle objects containing all the data used for this study are stored using git lfs. It could be that you need to install/pull these separately:
+
+```
+brew install git-lfs # use the right command on your system
+git lfs install
+git lfs pull
+```
+
 ## The Grammar Prediction Explorer
 
 The Grammar Predictions Explorer is a simple web-based tool specifically designed to visualize and compare grammar predictions. Its features help to simplify the exploration of predictions made by various, different grammars. It uses the pickle objects from the "grammar_dict_pickle" folder.
