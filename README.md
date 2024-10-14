@@ -1,8 +1,6 @@
 # Evaluating Large-Scale Construction Grammars on Semantic Frame Extraction
 
-This repository is part of a thesis project that involved the evaluation of large-scale, broad-coverage computational construction grammars with respect to their capability to extract semantic roles and frames from raw, unannotated English sentences. The study was performed as part of the [SemBrowse](https://ehai.ai.vub.ac.be/sembrowse/) (EHAI, 2023) project—an innovative corpus-linguistic tool developed by researchers from the Vrije Universiteit Brussel (VUB) and the Université de Namur (UNamur). SemBrowse serves as a discovery engine, able to identify attestations of frame-semantic patterns within text corpora based on the frame specification alone. At its core, SemBrowse leverages Fluid Construction Grammar ([FCG](https://www.fcg-net.org/)) (Beuls & Van Eecke, 2023; Steels, 2011a, 2017) and employs the PropBank (Palmer et al., 2005; Pradhan et al., 2022) rolesets to symbolize frames. These semantic frames capture an event with its participants, also known as an argument structure.
-
-This repository contains the code and resources for the project. It is meant as a supplement to the main body of text, and serves mainly as a technical documentation of the evaluation process. It contains all the source code used to evaluate the frame predictions of large-scale construction grammars. The main info is summarized here. The other documentation can be found in the [Jupyter notebook](https://github.com/TomMoeras/evaluating-large-scale-construction-grammar/blob/main/evaluating_ccxg_grammars.ipynb) in the main directory.
+This repository is part of a project that involved the evaluation of large-scale, broad-coverage computational construction grammars with respect to their capability to extract semantic roles and frames from unannotated English sentences. It contains the code and resources for the project. It is meant as a supplement to the main body of text, and serves mainly as a technical documentation of the evaluation process. It contains all the source code used to evaluate the frame predictions of large-scale construction grammars. The main info is summarized here. The other documentation can be found in the [Jupyter notebook](https://github.com/TomMoeras/evaluating-large-scale-construction-grammar/blob/main/evaluating_ccxg_grammars.ipynb) in the main directory.
 
 ## File Structure
 
@@ -14,7 +12,7 @@ The repository holds one main folder. The entire content can be [explored here](
 
 ### CCxG Grammar Eval Folder
 
-![Visualization of the "ccxg_grammar_eval" folder](./diagram.svg)
+![Visualization of the ](./diagram.svg)
 
 #### Data Folder
 
